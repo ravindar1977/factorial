@@ -1,0 +1,22 @@
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+# Test 1: Positive number (5)
+num1 = 5
+print("The factorial of", num1, "is", factorial(num1))
+
+# Test 2: Factorial of 0
+num2 = 0
+print("The factorial of", num2, "is", factorial(num2))
+
+# Test 3: Negative number (-3)
+num3 = -3
+if num3 < 0:
+    print("Factorial does not exist for negative numbers.")
+    
+# Test 4: Large number (10)
+num4 = 10
+print("The factorial of", num4, "is", factorial(num4))
